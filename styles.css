@@ -1,6 +1,11 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+
+}
+.background{
+  height: 100%;
+  width: 100%;
 }
 
 *, *::before, *::after {
@@ -15,7 +20,7 @@ html {
   border-radius: 3px;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 40%;
   transform: translate(-50%, -50%);
   width: 375px;
 }
@@ -47,14 +52,14 @@ button {
   color: rgb(70, 70, 70);
   background-image: linear-gradient(to bottom, transparent, transparent 50%, rgba(0, 0, 0, .04));
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .05),
-  inset 0 1px 0 0 rgba(255, 255, 255, .45),
-  inset 0 -1px 0 0 rgba(255, 255, 255, .15),
+  inset 0 1.5px 0 0 rgba(255, 255, 255, .45),
+  inset 0 -1.5px 0 0 rgba(255, 255, 255, .15),
   0 1px 0 0 rgba(255, 255, 255, .15);
   text-shadow: 0 1.5px rgba(255, 255, 255, .4);
 }
 
 button:hover {
-  background-color: #eaeaea;
+  background-color: #a1a0a0;
 }
 
 .operator {
