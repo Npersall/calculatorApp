@@ -1,0 +1,8 @@
+{
+  "jshint.options": {
+    "esversion": 6
+  },
+  "jshint.packageManager": "yarn",
+  "jshint.reportWarningsAsErrors": true,
+  "jshint.lintHTML": true,
+}
