@@ -1,31 +1,46 @@
 'Use Strict';
 
 class Calculator {
-  constructor(displayValue) {
-  this.displayValue = displayValue;
-  this.firstOperand =  null;
-  this.waitingForSecondOperand = false;
-  this.operator= null;
-  }
-   updateDisplay(value) {
-     const display = document.querySelector(".calculator-screen");
-    this.displayValue = value;
-    display.value = this.displayValue;
-  }
+  constructor(target) {
+    this.displayValue = 0;
+    this.firstOperand =  null;
+    this.waitingForSecondOperand = false;
+    this.operator = null;
+    this.target = null;
+    this.updateDisplay = function() {
+      const displayValue = 0;
+      const display = document.querySelector(".calculator-screen");
+      display.value = this.displayValue;
+  };
+
+    // keyPress(e)
+      // const keys = document.getElementById('.calculator-keys');
+      // keys.addEventListener('click', (event) => {
+      //   this.target= event;
+      //   if (!target.matches('button')) {
+      //     return;
+      //   }
+
+        // if(target.classlist.contains('operator')) {
+        //   console.log('operator', target.value);
+        //   return;
+        // }
+
+      // });
+    }
+
 }
 
-const calculator = new Calculator();
-console.log(calculator);
-calculator.updateDisplay(0);
+const calculator = new Calculator;
+// calculator.keyPress(2);
 
 
-
-//   const keys = document.querySelector('.calculator-keys');
-//   keys.addEventListener(`click`, (event) => {
-//     const{ target } = event;
-//     if (!target.matches('button')) {
-//       return;
-//     }
+  // const keys = document.querySelector('.calculator-keys');
+  // keys.addEventListener(`click`, (event) => {
+  //   const{ target } = event;
+  //   if (!target.matches('button')) {
+  //     return;
+  //   }
 
 //   if (target.classList.contains('operator')) {
 //     console.log('operator', target.value);
